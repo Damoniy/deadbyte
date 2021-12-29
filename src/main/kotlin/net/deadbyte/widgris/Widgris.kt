@@ -16,7 +16,6 @@ class Widgris: Ticker() {
     override fun preInit() {
         world = World()
         tiles = Tiles()
-        println(Registries.tiles.size)
         terrainGenerator = TerrainGenerator(Tilemap("/terrain/tilemap.png"))
     }
 

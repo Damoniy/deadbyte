@@ -1,7 +1,6 @@
 package net.deadbyte.widgris.engine.registry
 
-import net.deadbyte.widgris.engine.terrain.Tile
-import net.deadbyte.widgris.engine.terrain.Tiles
+import net.deadbyte.widgris.engine.terrain.tiles.Tile
 
 abstract class Registry {
     protected val preInitRegistries = ArrayList<IRegistrable>()

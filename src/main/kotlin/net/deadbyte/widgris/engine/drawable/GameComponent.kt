@@ -5,8 +5,8 @@ import java.awt.Graphics
 import java.awt.image.BufferedImage
 
 abstract class GameComponent(): IDrawable {
-    abstract val image: BufferedImage
     abstract val sprite: Sprite
+    private val image: BufferedImage by lazy { sprite.image }
     private val tileSize = 64
     private var x = 0
     private var y = 0

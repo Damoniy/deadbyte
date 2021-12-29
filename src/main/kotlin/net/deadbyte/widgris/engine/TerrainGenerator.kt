@@ -17,7 +17,6 @@ class TerrainGenerator(private val tilemap: Tilemap) {
                 val index = x + (y * tilemap.width)
                 val tile = tileFactory.createTile(Integer.toHexString(tilemap.pixels[index]))
                 tile.setPos(x, y)
-                println(tile.getY())
                 tiles[index] = (tile)
             }
         }
